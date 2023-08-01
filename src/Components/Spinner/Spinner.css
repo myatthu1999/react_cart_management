@@ -1,0 +1,32 @@
+body {
+    background: #ffff;
+  }
+  
+  .spinner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    width: 30px;
+    height: 30px;
+    background: #1abc9c;
+    border-radius: 100%;
+    box-shadow: 
+      -16px 28px 0px #d35400,
+      18px 28px 0px #3498db;
+    /* spin that shit */
+    -webkit-animation:spin .3s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+      100% {
+          -webkit-transform: rotate(360deg);
+      }
+  }
+  @keyframes spin {
+      100% {
+          -webkit-transform: rotate(360deg);
+      }
+  }
